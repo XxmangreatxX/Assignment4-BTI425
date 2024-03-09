@@ -1,3 +1,14 @@
+/*********************************************************************************
+*  WEB422 – Assignment 4
+*  I declare that this assignment is my own work in accordance with Seneca Academic Policy.  
+*  No part of this assignment has been copied manually or electronically from any other source
+*  (including web sites) or distributed to other students.
+* 
+*  Name: Ali Keshavarzi Student ID: 138245220 Date: 3/8/2024
+*
+********************************************************************************/ 
+
+
 import { Navbar, Nav, Container, Row, Col, Image } from 'react-bootstrap';
 
 export default function Home() {
