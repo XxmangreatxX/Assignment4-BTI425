@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Container, Row, Col, Form, Button, FormControl, FormGroup, FormCheck } from 'react-bootstrap';
-import { useRouter } from 'next/router'; // Make sure useRouter is imported
+import { useRouter } from 'next/router';
 
 export default function AdvancedSearch() {
   const [searchQuery, setSearchQuery] = useState('');
@@ -10,7 +10,7 @@ export default function AdvancedSearch() {
   const [highlighted, setHighlighted] = useState(false);
   const [onView, setOnView] = useState(false);
 
-  const router = useRouter(); // Initialize useRouter
+  const router = useRouter();
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -23,7 +23,6 @@ export default function AdvancedSearch() {
     if (highlighted) queryParams.append('isHighlight', highlighted.toString());
     if (onView) queryParams.append('isOnView', onView.toString());
 
-    // Redirect to the '/artwork' route with the constructed query string
     router.push(`/artwork?${queryParams.toString()}`);
   };
 
