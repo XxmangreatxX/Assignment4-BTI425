@@ -31,3 +31,7 @@ body {
     text-wrap: balance;
   }
 }
+
+body {
+  padding-top: 70px; /* Adjust this value to match the height of your Navbar */
+}
